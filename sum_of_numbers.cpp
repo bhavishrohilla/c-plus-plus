@@ -6,10 +6,10 @@ int main() {
 	//Take Input
 	cin>>n;
 	//Init Condition
-	int i=1;
+	int i = 1;
 	int sum = 0;
 
-	while(i<=n) {
+	while(i<=n){
 		sum = sum+i;
 		i = i+1;
 	}

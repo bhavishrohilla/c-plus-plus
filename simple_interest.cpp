@@ -9,9 +9,9 @@ int main() {
 	float si;
 
 	//assigning value to the storage in the memory
-	p=100;
+	p=50;
 	r=25;
-	t=2;
+	t=1;
 
 	//every statement should be teminated by the semi-colon
 	si = p*r*t/100;

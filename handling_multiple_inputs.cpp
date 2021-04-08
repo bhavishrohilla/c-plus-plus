@@ -8,9 +8,10 @@ int main() {
 	int no;
 	while(N>0){
 		cin>>no;
-		cout<<no*no<<endl;
+		cout<<no*no<<endl;	
 		N=N-1;
 	}
+
 
 
 	return 0;

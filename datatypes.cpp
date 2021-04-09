@@ -9,11 +9,11 @@ int main(){
 	char ch = 'B';
 
 
-	cout<<"int"<<" "<< sizeof(x)<<endl;
-	cout<<"float"<<" "<< sizeof(y)<<endl;
-	cout<<"bool"<<" " <<sizeof(weather_is_rainy)<<endl;
-	cout<<"double"<<" "<<sizeof(pi)<<endl;
-	cout<<"ch"<<" "<<sizeof(ch)<<endl; 
+	cout<<"int"<<" "<< sizeof(x)<<endl;		//4bytes
+	cout<<"float"<<" "<< sizeof(y)<<endl;		//4bytes
+	cout<<"bool"<<" " <<sizeof(weather_is_rainy)<<endl;		//1byte
+	cout<<"double"<<" "<<sizeof(pi)<<endl;		//8bytes
+	cout<<"ch"<<" "<<sizeof(ch)<<endl; 		//1byte
 
 	return 0;
 }

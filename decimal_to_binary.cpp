@@ -17,7 +17,7 @@ int main() {
 			no = no/10; // to discard the last digit like 101/10= 10 now the work is further done on 0
 		}
 	cout<<ans<<endl;
-	N=N-1;
+	N=N-1; //to end the loop eg. if N=4 it means there will total 4 binary no.s and after every one cycle N will become decremented by 1 i.e 3,2,1
 	}
 
 

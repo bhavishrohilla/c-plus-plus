@@ -13,7 +13,7 @@ int main(){
 	cout<<"float"<<" "<< sizeof(y)<<endl;		//4bytes
 	cout<<"bool"<<" " <<sizeof(weather_is_rainy)<<endl;		//1byte
 	cout<<"double"<<" "<<sizeof(pi)<<endl;		//8bytes
-	cout<<"ch"<<" "<<sizeof(ch)<<endl; 		//1byte
+	cout<<"ch"<<" "<<sizeof(ch)<<endl; 		//1byte  
 
 	return 0;
 }

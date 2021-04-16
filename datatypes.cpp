@@ -8,7 +8,7 @@ int main(){
 	double pi= 3.14;
 	char ch = 'B';
 
-
+	// HOw much memory each of these is going to occupy
 	cout<<"int"<<" "<< sizeof(x)<<endl;		//4bytes
 	cout<<"float"<<" "<< sizeof(y)<<endl;		//4bytes
 	cout<<"bool"<<" " <<sizeof(weather_is_rainy)<<endl;		//1byte

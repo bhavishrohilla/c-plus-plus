@@ -2,11 +2,13 @@
 using namespace std;
 
 int main(){
-	int cliff_end = 10;
+	int cliff_end;
+	cin>>cliff_end;
 	int x = 0;
 	while(x!=cliff_end){
-		cout<<x<<endl;
 		x = x+1;
+		cout<<"Taking 1 step and reaching : "<<x<<endl;
+
 	}
 
 

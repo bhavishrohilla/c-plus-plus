@@ -13,7 +13,7 @@ int main() {
 		while(no>0){
 			int r=no%10;
 			ans = ans+r*p;
-			p = p*2;   // the power is inceremented by 2 raise to the power like 1,2,4,8,16,32
+			p = p*2;   // the power is inceremented by raise to the power 2, For eg. 1,2,4,8,16,32
 			no = no/10; // to discard the last digit like 101/10= 10 now the work is further done on 0
 		}
 	cout<<ans<<endl;

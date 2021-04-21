@@ -8,6 +8,7 @@ int main(){
 	int max_so_far = INT_MIN;
 	int min_so_far = INT_MAX;
 	int no;
+	//without storin all the numbers
 	for(int i=0; i<n; i++){
 		cin>>no;
 		if(no>max_so_far){

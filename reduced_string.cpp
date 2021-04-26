@@ -9,6 +9,7 @@ int main(){
 
 	int x=0;
 	int y=0;
+	char ans;
 
 	while(ch!='\n'){
 		if(ch=='N' or ch=='n'){
@@ -25,5 +26,5 @@ int main(){
 		}
 		ch = cin.get();
 	}
-	cout<<"The final displacement in x and y are "<<x <<" and "<<y;
+	cout<<"The final displacement is "<<x <<" and "<<y;
 }

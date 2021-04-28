@@ -32,7 +32,7 @@ int main(){
 		}
 	}
 	else if(x<0){
-		for(int i=0;i<=x;i++){
+		for(int i=x;i<=0;i++){
 			cout<<'W';
 		}
 	}
@@ -42,9 +42,9 @@ int main(){
 		}
 	}
 	else if(y<0){
-		for(int j=0;j<=y;j++){
+		for(int j=y;j<=0;j++){
 			cout<<'S';
-	}
+		}
 	}
 	
 }

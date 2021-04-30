@@ -10,7 +10,7 @@ int main(){
 
 
 	int a =100;
-	int b = ++a;	//
+	int b = ++a;	//a as well as b will be inmcremented
 	cout<<a<<endl;
 	cout<<b;
 }

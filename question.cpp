@@ -1,14 +1,17 @@
-/*#include<iostream>
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
 using namespace std;
 
-int main(){
-	int a,b,c,d;
-	cin>>a>>b>>c>>d;
-	int sum_of_four(int a, int b, int c, int d);
-	int sum = 0;
-	sum = sum +a;
-	sum+=b;
-	sum+=c;
-	sum+=d;
-	cout<<sum;
-}*/
+
+int main() {
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */
+    int n;
+    cin>>n;
+    const int size = n;
+    int array[size];
+    cout<<array[size];
+    return 0;
+}

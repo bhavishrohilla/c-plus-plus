@@ -19,4 +19,17 @@ int main(){
 	cout<<endl;
 	
 	//Bitwise operator
+	x = 5;
+	int y = 7;
+	cout<<"AND "<<(x&y)<<endl;
+	cout<<"OR "<<(x|y)<<endl;
+	cout<<"XOR "<<(x^y)<<endl;
+
+	//Shift operator
+	cout << (x<<3) <<endl; //it will multiply x by 2 raise to the power 3 (5*8=40)
+	cout << (y>>1) <<endl; //it will reduce the value of y by dividing it by 2 raise to the power 1 i.e 2 (7/2=3)
+
+	//Address
+	cout<< (&x) <<endl;
+
 }

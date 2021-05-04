@@ -29,7 +29,15 @@ int main(){
 	cout << (x<<3) <<endl; //it will multiply x by 2 raise to the power 3 (5*8=40)
 	cout << (y>>1) <<endl; //it will reduce the value of y by dividing it by 2 raise to the power 1 i.e 2 (7/2=3)
 
-	//Address
-	cout<< (&x) <<endl;
+	//Unary Operator
 
+	//Address of operator
+	cout<< (&x) <<endl; //Here (&x) is not a bitwise operator.
+
+	//Post Increment / Decrement
+	a = 10;
+	int z = a++; 	//z = 10 and a = 10+1
+	cout<<z<<endl;	//10
+	z = ++a;		//a = 12 , z = 12
+	cout<<z<<endl;	//12
 }

@@ -1,0 +1,4 @@
+	---Bitwise Operators-----
+a = 5; 0 0 0 0 1 0 1
+b = 7; 0 0 0 0 1 1 1
+a&b ; 0 0 0 0 1 0 1 that is equal to 5

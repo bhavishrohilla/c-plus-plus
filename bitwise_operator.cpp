@@ -52,4 +52,8 @@ int main(){
 	b<<=1;
 	cout<<"b after right shift "<<b<<endl;	//10
 
+	a =5;
+	b = 7;
+	cout<< (a&b)<<endl;
+
 }

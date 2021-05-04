@@ -40,4 +40,16 @@ int main(){
 	cout<<z<<endl;	//10
 	z = ++a;		//a = 12 , z = 12
 	cout<<z<<endl;	//12
+
+	//Compound Assignment Operator
+	a = 10;
+	a*=3;
+	cout<<"a after multiplication "<<a<<endl;	//30
+	a%=7;	
+	cout<<"a after modulo "<<a<<endl;		//2
+
+	b = 5;
+	b<<=1;
+	cout<<"b after right shift "<<b<<endl;	//10
+
 }

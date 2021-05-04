@@ -12,3 +12,4 @@ a|b(or)  ; 	  0 0 0 0 1 1 1 that is equal to 7;
 a =    1 0 1	(5)
 b =    1 1 1(7)
 a^b= 0 1 0(2)
+***The XOR of same numbers is always 0.

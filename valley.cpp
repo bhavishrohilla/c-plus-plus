@@ -4,16 +4,16 @@ using namespace std;
 int main(){
 	int steps;
 	steps = cin.get();
-	int y = 0;
+	int valley = 0;
 	int times = 0;
 	while(steps!='\n'){
 		if(steps=='U' or steps=='u'){
-			y++;
+			valley--;
 		}
 		else if(steps=='D' or steps=='d'){
-			y--;
+			valley++;
 		}
-			if(y<0){
+			if(valley<0){
 				times = times+1;
 			}
 		steps = cin.get();

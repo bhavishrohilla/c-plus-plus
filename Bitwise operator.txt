@@ -1,4 +1,14 @@
 	---Bitwise Operators-----
-a = 5; 0 0 0 0 1 0 1
-b = 7; 0 0 0 0 1 1 1
-a&b ; 0 0 0 0 1 0 1 that is equal to 5
+a = 5;	  0 0 0 0 1 0 1
+b = 7;	  0 0 0 0 1 1 1
+a&b(and) ; 0 0 0 0 1 0 1 that is equal to 5
+a|b(or)  ; 	  0 0 0 0 1 1 1 that is equal to 7;
+    XOR(Exactly 1 bit should be 1)
+1^1 =0 
+0^1 = 1
+1^0 =1
+0^ 0 =0
+
+a =    1 0 1	(5)
+b =    1 1 1(7)
+a^b= 0 1 0(2)

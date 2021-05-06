@@ -11,8 +11,5 @@ int main() {
 		cout<<no*no<<endl;	
 		N=N-1;
 	}
-
-
-
 	return 0;
 }

@@ -13,3 +13,7 @@ a =    1 0 1	(5)
 b =    1 1 1(7)
 a^b= 0 1 0(2)
 ***The XOR of same numbers is always 0.
+***The XOR of any number with zero is that number.
+*** Bitwise NOT will flip all the bits.
+
+43.239.206.117

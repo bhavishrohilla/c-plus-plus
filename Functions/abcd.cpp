@@ -1,9 +1,7 @@
 #include<iostream>
 using namespace std;
 
-int main(){
-	int n;
-	cin>>n;
+void printABDCpattern(int n){
 	for(int i=1; i<=n; i++){
 		char alphabet = 'A';
 		for(int j=n-i+1; j>0; j--){
@@ -12,4 +10,10 @@ int main(){
 		}
 		cout<<endl;
 	}
+}
+
+int main(){
+	int n;
+	cin>>n;
+	printABDCpattern(n);
 }

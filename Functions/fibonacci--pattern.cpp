@@ -9,7 +9,7 @@ int fibonacci(int n){
 	cout<<b<<" ";
 	for(int i=1; i<=n-2;i++){
 		c =a+b;
-		cout<<c<< " ";
+		cout<<c<<"hogya"<<" ";
 		a=b;
 		b=c;
 	}

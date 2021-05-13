@@ -9,13 +9,15 @@ bool isPrime(int n){
 	}
 	return true;
 }
+void printPrimes(int N){
+	for(int i=2; i<=N; i++){
+		if(isPrime(i)){
+			cout<<i<< " ";
+		}
+	}
+}
 int main(){
 	int n;
 	cin>>n;
-	if(isPrime(n)){
-		cout<<n<<" is prime!"<<endl;
-	}
-	else{
-		cout<<n<<" is not prime!";
-	}
+	printPrimes(n);
 }

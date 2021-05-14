@@ -12,7 +12,13 @@ int main(){
 	for(int i=0; i<n; i++){
 		cin>>d[i];
 	}*/
-	for(int i=0; i<10; i++){
+	/*for(int i=0; i<10; i++){
 		cout<<c[i]<<", ";
+	}*/
+	for(int i=0; i<5; i++){
+		cin>>a[i];
+	}
+	for(int i=0; i<10; i++){
+		cout<<a[i]<<", ";
 	}
 }

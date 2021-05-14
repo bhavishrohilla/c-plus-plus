@@ -14,16 +14,16 @@ int main(){
 	}
 
 	cout<<"Which element you need to search? - " ;
-	int no;
-	cin>>no;
+	int key;
+	cin>>key;
 	int i;
 	for(i=0; i<n; i++){
-		if(a[i]==no){
-			cout<<"The element "<<no<<" is at the index "<<i<<endl;
+		if(a[i]==key){
+			cout<<"The key "<<key<<" is at the index "<<i<<endl;
 			break;
 		}
 	}
-	if(a[i]!=no){
-		cout<<no<<" is not present in the list";
+	if(a[i]!=key){
+		cout<<key<<" is not present in the list";
 	}
 }

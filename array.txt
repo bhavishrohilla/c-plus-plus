@@ -1,0 +1,1 @@
+ARRAY -collection of items stored in a continuous memory.

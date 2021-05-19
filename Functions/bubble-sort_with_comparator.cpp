@@ -2,6 +2,7 @@
 using namespace std;
 
 bool compare(int a, int b){
+	cout<<"Comparing "<<a<<" and "<<b<<endl;
 	return a>b;
 
 }

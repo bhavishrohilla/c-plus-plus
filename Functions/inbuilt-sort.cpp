@@ -4,6 +4,7 @@ using namespace std;
 
 //Defining a comparator
 bool compare(int a, int b){
+	cout<<"Comparing "<<a<<" and "<<b<<endl;
 	return a>b;
 }
 
@@ -20,7 +21,7 @@ int main(){
 		cout<<a[x];
 	}
 
-	sort(a,a+n+1, compare); //compare changes it to Decreasing order
+	sort(a,a+n+1, compare); //compare changes it to Decreasing order(Function as a parameter in function)
 	for(int x=0; x<n; x++){
 		cout<<a[x];
 	}

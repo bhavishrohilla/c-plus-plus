@@ -2,15 +2,17 @@
 using namespace std;
 
 int main(){
-	int row,col;
-	int a[row][col];
+	int m,n;
+	cin>> m>> n;
+	int a[m][n];
 	int val = 1;
-	for(int i=0; i<(row-1); i++){
-		for(int j=0; j<(col-1); j++){
+	for(int row=0; row<=m-1; row++){
+		for(int col=0; col<=n-1; col++){
 			a[row][col] = val;
-			val=val+1;
-			cout<<a[i][j];
+			val = val + 1;
+			cout<<a[row][col]<<" ";
 		}
+		cout<<endl;
 	}
 
 

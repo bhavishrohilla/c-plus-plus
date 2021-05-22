@@ -29,7 +29,6 @@ int main(){
 	int no;
 	cin>>no;
 	armstrong(no);
-	
 
 	return 0;
 }

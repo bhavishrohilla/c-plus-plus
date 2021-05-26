@@ -33,6 +33,7 @@ int main(){
 			cin>>a[i][j];	
 		}
 	}
-	rotate(a,n);
+	rotate(a, n);
+	display(a, n);
 	return 0;
 }

@@ -10,6 +10,9 @@ int main(){
 
 	char c[] = {'a','b','c','d','\0'};
 	cout << c << endl;	//abcd
+
+	int d[] = {'1','2','3'};
+	cout<< d << endl;	//We will get the address of the memory .
 }
 
 /*

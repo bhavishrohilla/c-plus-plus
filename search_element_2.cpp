@@ -18,20 +18,24 @@ int main(){
 		}
 		cout<<endl;
 	}
-	int i,j;
-	for(i=0; i<n; i++){
-		for(j =n-1; j>0; j++){
-			int ch =a[i][j];
-			while(key==ch){
-				if(key>a[i][j]){
-					a[i][j] = a[i+1][j];
-				}
-				else if(key<a[i][j]){
-					a[i][j] = a[i][j-1];
-				}
-				break;
-			}
+
+	int i=0;
+	int j =n-1;
+	int ch = a[i][j];
+	while(i<n and j>=0){
+		if(ch=key){
+			cout<<i<<" and "<<j;
+			return 0;
+		}
+		else if(ch>key){
+			i= i+1;
+		}
+		else{
+			j= j+1;
 		}
 	}
-	cout<<i<<" "<<j;
+	cout<<i<<" and "<<j;
+
+	return 0;
+
 }

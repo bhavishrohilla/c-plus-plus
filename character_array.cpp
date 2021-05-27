@@ -12,7 +12,17 @@ int main(){
 	cout << c << endl;	//abcd
 
 	int d[] = {'1','2','3'};
-	cout<< d << endl;	//We will get the address of the memory .
+	cout<< d << endl;	//We will get the address of the memory 
+
+	char s1[] = {'h','e','l','l','o'};	//doesnot terminate with a null
+	char s2[] = "hello"; //another way-terminates with a null 
+	cout<<s1<<" "<<sizeof(s1)<<endl;	//5 bytes
+	cout<<s2<<" "<<sizeof(s2)<<endl;	//6 bytes
+
+	char s3[10] = "hello";
+	char s4[4];
+	cin>>s4;
+	cout<<s4;
 }
 
 /*

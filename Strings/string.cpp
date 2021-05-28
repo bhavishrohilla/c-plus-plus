@@ -33,4 +33,9 @@ int main(){
 	cout<<s0.length()<<endl;
 	s0.clear();
 	cout<<s0.length()<<endl;
+
+	//Comparing Two Strings
+	string a1 = "Mango";
+	string a2 = "Watermelon";
+	cout<<a1.compare(a2)<<endl;	//Returns an integer value either 0 or no zero. 
 }

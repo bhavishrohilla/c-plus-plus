@@ -2,7 +2,7 @@
 #include<cstring>
 using namespace std;
 
-bool isPalindrome(int a[]){
+bool isPalindrome(char a[]){
 	int i=0;
 	int j=strlen(a) -1;
 	while(i<j){
@@ -19,7 +19,7 @@ bool isPalindrome(int a[]){
 
 int main(){
 
-	int char a[1000];
+	char a[1000];
 	cin.getline(a, 1000);
 	if(isPalindrome(a)){
 		cout<<"Palindrome"<<endl;

@@ -1,0 +1,20 @@
+#include<iostream>
+using namespace std;
+
+int main(){
+	//string init
+	string s0;
+	string s1("Hello World!");
+	string s3 = "Hello World!";
+	string s4(s3);
+	string s2 = s4;
+
+	char a[] = {'a', 'b', 'c'};
+	string s5(a);
+	cout<<s0;
+	cout<<s1<<endl;
+	cout<<s2<<endl;
+	cout<<s3<<endl;
+	cout<<s4<<endl;
+	cout<<s5<<endl;
+}

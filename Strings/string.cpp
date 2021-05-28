@@ -52,4 +52,20 @@ int main(){
 	int idx1 = s.find("Apple");		//-1
 	cout<<idx<<endl;
 	cout<<s.find("apple")<<endl;
+
+	//Remove a word from a string
+	
+	/*cout<<s<<endl;
+	int len = s.length();
+	s.erase(idx, len);
+	cout<<s<<endl;		//I want to have some -- and further is erased.
+	*/
+
+	cout<<s<<endl;
+	cout<<"Which word you have to erase ?"<<endl;
+	string word = "apple";
+	int word_len = word.length();
+	s.erase(idx, word_len);
+	cout<<s<<endl;
+
 }

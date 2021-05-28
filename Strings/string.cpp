@@ -1,4 +1,5 @@
 #include<iostream>
+#include<string>
 using namespace std;
 
 int main(){
@@ -54,7 +55,7 @@ int main(){
 	cout<<s.find("apple")<<endl;
 
 	//Remove a word from a string
-	
+
 	/*cout<<s<<endl;
 	int len = s.length();
 	s.erase(idx, len);
@@ -65,7 +66,7 @@ int main(){
 	cout<<"Which word you have to erase ?"<<endl;
 	string word = "apple";
 	int word_len = word.length();
-	s.erase(idx, word_len);
+	s.erase(idx, word_len+1);	//+1 for only the space after apple.
 	cout<<s<<endl;
 
 }

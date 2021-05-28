@@ -9,7 +9,7 @@ int main(){
 	string s4(s3);
 	string s2 = s4;
 
-	char a[] = {'a', 'b', 'c'};
+	char a[] = {'a', 'b', 'c','\0'};
 	string s5(a);
 	cout<<s0;
 	cout<<s1<<endl;
@@ -17,4 +17,20 @@ int main(){
 	cout<<s3<<endl;
 	cout<<s4<<endl;
 	cout<<s5<<endl;
+
+	if(s0.empty()){
+		cout<<"s0 is empty"<<endl;
+	}
+
+	//Append
+	s0.append("I like C++");
+	cout<<s0<<endl;
+
+	s0 += " and Python";
+	cout<<s0<<endl;
+
+	//Remove
+	cout<<s0.length()<<endl;
+	s0.clear();
+	cout<<s0.length()<<endl;
 }

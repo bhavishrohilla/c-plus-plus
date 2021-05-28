@@ -37,5 +37,19 @@ int main(){
 	//Comparing Two Strings
 	string a1 = "Mango";
 	string a2 = "Watermelon";
-	cout<<a1.compare(a2)<<endl;	//Returns an integer value either 0 or no zero. 
+	cout<<a1.compare(a2)<<endl;	//Returns an integer value either ==0 or < 0, > 0 based on lexical comparison.
+
+	//Operator overloading
+	if(a1<a2){
+		cout<<a1<<" is lex smaller than "<<a2<<endl;
+	}
+	cout<<a1[2]<<endl;		//n
+
+	//Find substrings
+
+	string s = "I want to have some apple juice";
+	int idx = s.find("apple");		//20
+	int idx1 = s.find("Apple");		//-1
+	cout<<idx<<endl;
+	cout<<s.find("apple")<<endl;
 }

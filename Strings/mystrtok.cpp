@@ -10,7 +10,11 @@ char *mystrtok(char *str, char delim){
 	}
 
 	//start xtracting tokens and store them in an array
-	
+	char *output = new char[strlen(input)+1];
+	int i=0;
+	for( ;input [i]!='\0';i++){
+		
+	}
 }
 
 int main(){

@@ -11,10 +11,13 @@ int main(){
 
 	char s[100] = "Today, is a, rainy, day";
 
+	//First we need to store the whole string....
 	char *ptr = strtok(s,",");
 	cout<<ptr<<endl;
-		while(ptr!=NULL){
-		ptr = strtok(NULL,",");
-		cout<<ptr<<endl;
+
+	//...and then we have to pass NULL each time to fetch every word
+	while(ptr!=NULL){
+	ptr = strtok(NULL,",");
+	cout<<ptr<<endl;
 	}
 }

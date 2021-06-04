@@ -6,7 +6,7 @@ using namespace std;
 char *mystrtok(char *str, char delim){
 
 	//string and single char as delimiter
-	static char *input = NULL;
+	static char*input = NULL;
 	if(str!= NULL){
 		//making the first call
 		input = str;

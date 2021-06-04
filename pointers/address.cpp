@@ -15,8 +15,9 @@ int main(){
 	char ch = 'A';
 
 	cout << &ch << endl;
+
 	//Explicit type cadting from char* to void*
-	cout<< (void *)&ch << endl;
+	cout<< (void *)&ch << endl; // void * will tell the address of the character
 
 
 	return 0;

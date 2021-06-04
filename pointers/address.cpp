@@ -15,6 +15,8 @@ int main(){
 	char ch = 'A';
 
 	cout << &ch << endl;
+	//Explicit type cadting from char* to void*
+	cout<< (void *)&ch << endl;
 
 
 	return 0;

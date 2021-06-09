@@ -24,7 +24,7 @@ int main(){
 
 		//Double pointer
 		int **xxptr = &xptr;
-		cout << xxptr << endl;
+		cout << xxptr << endl; 
 
 
 	return 0;

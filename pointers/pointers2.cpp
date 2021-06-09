@@ -7,14 +7,15 @@ int main(){
 		xptr = &x;
 
 		cout << x << endl;		//10
+		cout << endl;
 
-		cout << xptr << endl;		//address
+		cout << xptr << endl;		//address of x
 		cout << &x << endl;		//address of x
-
-		cout << *(&x) << endl;
-		cout << *(xptr) << endl; 
-
-		cout << *(&xptr) << endl;
+		cout << endl;
+		cout << *(&x) << endl;		//10
+		cout << *(xptr) << endl; 		//10
+		cout << endl;
+		cout << *(&xptr) << endl;		//
 		cout << &(*xptr) << endl;
 
 

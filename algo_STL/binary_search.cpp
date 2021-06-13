@@ -32,6 +32,8 @@ int main(){
 	auto ub = upper_bound(arr, arr+n, 40);
 	cout <<"Upper bound of 40 is "<< (ub-arr) << endl;
 
+	//NO. of occurences of 40;
+	cout<< "No of occurences of 40 is " << (ub-lb) << endl;
 
 	return 0;
 }

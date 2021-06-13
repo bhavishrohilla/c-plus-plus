@@ -15,5 +15,15 @@ int main(){
 		arr[i] = new int[c];
 	}
 
+	//take input and print the elements
+	int val = 1;
+	for(int i=0; i<r; i++){
+		for (int j = 0; i < c; j++){
+			arr[i][j] = val;
+			val++;
+
+		}
+	}
+
 	return 0;
 }

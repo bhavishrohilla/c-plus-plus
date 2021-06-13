@@ -14,6 +14,7 @@ int main(){
 	int* b = fun();
 	cout << b << endl;
 	cout << b[0] << endl; 
-
+	//clear the array a
+	delete [] b;
 	return 0;
 }

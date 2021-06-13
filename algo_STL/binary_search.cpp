@@ -22,7 +22,7 @@ int main(){
 	//Two more things
 	//Get the index of the element
 	//lower bound(s,e,key) and upper bound(s,e,key)
-
+	
 
 	//Lower bound
 	auto lb = lower_bound(arr, arr+n, 40);

@@ -21,8 +21,9 @@ int main(){
 		for (int j = 0; i < c; j++){
 			arr[i][j] = val;
 			val++;
-
+			cout << arr[i][j];
 		}
+		cout << endl; 
 	}
 
 	return 0;

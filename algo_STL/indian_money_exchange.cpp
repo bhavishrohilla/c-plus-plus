@@ -12,7 +12,7 @@ int main(){
 	int money = 100;
 
 	while(money>0){
-		int lb = lower_bound(currency, currency+n, money, compare)-currency-1;
+		int lb = lower_bound(currency, currency+n, money, compare) - currency - 1;
 		int m = currency[lb];
 		cout << m << ",";
 		money = money - m;

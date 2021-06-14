@@ -19,4 +19,13 @@ int main(){
 	for(int i=0; i<v.size(); i++){
 		cout << v[i] << " ";
 	}
+
+
+	//NExt permutation
+	next_permutation(v.begin(),v.end());
+	cout << endl;
+	//for each loop
+	for(int x:v){
+		cout << x << " ";
+	}
 }

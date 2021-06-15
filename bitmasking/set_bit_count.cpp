@@ -16,9 +16,9 @@ int countBits(int n){
 int countBitsFaster(int n){
 	int ans = 0;
 	while(n > 0){
-		n = n & (n-1);
+		n = n & (n-1);	//It will remove the set bits from right to left(time complexity is low)
 		ans++;
-	}
+	}	//no. of iterations will be equal to the no. of times loop executes 
 }
 
 int main(){

@@ -19,10 +19,11 @@ int setBit(int &n, int i){
 int main(){
 
 	int n = 5;
-	cout << "Which bit you want to know ? - ";
+	cout << "Which bit you want to set ? - ";
 	int i;
 	cin >> i;
-	cout <<"The "<<i<<" bit is "<< getBit(n,i)<<endl;
+	//cout <<"The "<<i<<" bit is "<< getBit(n,i)<<endl;
+	cout << "Ans " << setBit(n,i);
 	//cout << isOdd(n);
 
 	return 0;

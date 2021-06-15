@@ -7,7 +7,7 @@ int clearLastBits(int n, int i){
 	return n ;
 }
 int clearRangeFromItoJ(int n, int i, int j){
-	int a = (~0) << (j+1);
+	int a = (~0) << (j+1);	//~0 means all ones(11111)
 	int b = (1 << i) -1;
 	int mask = a | b;
 	int ans = n & mask;

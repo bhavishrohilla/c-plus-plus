@@ -10,6 +10,11 @@ int getBit(int n, int i){
 	int bit = (n & mask) > 0 ? 1 : 0;
 	return bit;
 }
+int setBit(int &n, int i){
+	 int mask = (1 << i);
+	 int ans = n | mask;
+	 return ans;
+}
 
 int main(){
 

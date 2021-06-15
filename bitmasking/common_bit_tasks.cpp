@@ -15,10 +15,14 @@ int setBit(int &n, int i){
 	 int ans = n | mask;
 	 return ans;
 }
-int delBit(int n, int i){
+void clearBit(int &n, int i){
 	int mask = ~(1 << i);
-	int ans = (n & mask);
-	return ans;
+	n = (n & mask);
+}
+void updateBit(int &n, int i, int v){
+	int mask = ~(1 << i);
+	int cleared_n = n & mask;
+	n = cleared_n | (v<<i); 
 }
 
 int main(){
@@ -28,8 +32,18 @@ int main(){
 	int k;
 	cin >> k;
 	//cout <<"The "<<i<<" bit is "<< getBit(n,i)<<endl;
+	
 	//cout << "Ans " << setBit(n,j);
+	
 	//cout << isOdd(n);
-	cout << "Ans " << delBit(n,k);
+	
+	/*
+	clearBit(n,k);
+	cout << n;
+	*/
+	updateBit(n , 2 , 0);
+	updateBit(n, 3, 1);
+	cout << n << endl;
+
 	return 0;
 }

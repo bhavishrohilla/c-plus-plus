@@ -20,10 +20,10 @@ int main(){
 
 	int n = 5;
 	cout << "Which bit you want to set ? - ";
-	int i;
-	cin >> i;
+	int j;
+	cin >> j;
 	//cout <<"The "<<i<<" bit is "<< getBit(n,i)<<endl;
-	cout << "Ans " << setBit(n,i);
+	cout << "Ans " << setBit(n,j);
 	//cout << isOdd(n);
 
 	return 0;

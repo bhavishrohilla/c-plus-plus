@@ -24,12 +24,12 @@ int delBit(int n, int i){
 int main(){
 
 	int n = 5;
-	cout << "Which bit you want to set ? - ";
+	cout << "Which bit you want to delete ? - ";
 	int k;
 	cin >> k;
 	//cout <<"The "<<i<<" bit is "<< getBit(n,i)<<endl;
 	//cout << "Ans " << setBit(n,j);
 	//cout << isOdd(n);
-	cout << delBit(n,k);
+	cout << "Ans " << delBit(n,k);
 	return 0;
 }

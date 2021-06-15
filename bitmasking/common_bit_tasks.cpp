@@ -28,9 +28,11 @@ void updateBit(int &n, int i, int v){
 int main(){
 
 	int n = 5;
+
 	cout << "Which bit you want to delete ? - ";
 	int k;
 	cin >> k;
+	
 	//cout <<"The "<<i<<" bit is "<< getBit(n,i)<<endl;
 	
 	//cout << "Ans " << setBit(n,j);

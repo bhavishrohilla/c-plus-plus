@@ -12,4 +12,6 @@ int main(){
 	int n = 5;
 	int i;
 	cin >> i;
+	cout << clearLastBits(n,i)<< endl;
+
 }

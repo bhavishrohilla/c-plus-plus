@@ -10,5 +10,4 @@ int main(){
 	int n = 5;
 	int i = 2;
 	cout << isOdd(n);
-
 }

@@ -30,8 +30,20 @@ int main(){
 	prime_seive(p);
 
 	int csum[1000005] = {0};
+
+	//precompute the primes upto an index i
 	for(int i=0; i<=1000000; i++){
 		csum[i] = csum[i-1] + p[i];
+	}
+	int q;
+	cin>>q;
+	while(q--){
+		int a,b;
+		cin>>a>>b;
+		cout << csum[b] - csum[a-1]<<endl;
+		{
+			
+		};
 	}
 
 	return 0;

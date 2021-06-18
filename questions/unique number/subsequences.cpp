@@ -17,7 +17,7 @@ void filterChars(int n, char a[]){
 
 void printSubsets(char a[]){
 	int n = strlen(a);
-	for(int i=0; i<n; i++){
+	for(int i=0; i<(1<<n); i++){
 		filterChars(i,a);
 	}
 	return;

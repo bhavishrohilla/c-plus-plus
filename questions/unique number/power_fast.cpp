@@ -25,6 +25,7 @@ int main(){
 	cout << ans;
 	*/
 	int n,a;
+	cout <<
 	cin >> a >> n ;
 	cout << power_optimised(a,n) <<endl;
 

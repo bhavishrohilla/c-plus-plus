@@ -2,6 +2,7 @@
 using namespace std;
 
 int main(){
+	//Array of fixed size -> O(1) space
 	int cnt[64] = {0};
 	int n,no;
 	cin>>n;

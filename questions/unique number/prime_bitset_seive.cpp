@@ -24,6 +24,11 @@ bool isPrime(long long No){
 	if(No<=n){
 		return b[No] == 1 ? true : false;
 	}
+	for(int i=0; primes[i]*primes[i]<=No; i++){
+		if(No%primes[i]==0){
+			return false;
+		}
+	}
 }
 
 int main(){

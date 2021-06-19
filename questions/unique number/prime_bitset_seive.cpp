@@ -20,6 +20,12 @@ void sieve(){
 	}
 }
 
+bool isPrime(long long No){
+	if(No<=n){
+		return b[No] == 1 ? true : false;
+	}
+}
+
 int main(){
 
 

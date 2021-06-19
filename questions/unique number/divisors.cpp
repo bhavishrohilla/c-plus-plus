@@ -5,7 +5,6 @@ using namespace std;
 vector<int> primeSieve(int *p, int n){
 	p[0] = p[1] = 0;
 	p[2] = 1;
-
 	//Let us mark all odd numbers as prime
 	for(int i=3; i<=n; i+=2){
 		p[i] = 1;
@@ -36,6 +35,7 @@ int no_of_divisors(int m, vector<int> &primes){
 	
 	int i=0;
 	int p = primes[0];
+	int ans = 1;
 	while(p*p<=m){
 
 		if(m%p==0){
@@ -44,15 +44,16 @@ int no_of_divisors(int m, vector<int> &primes){
 				cnt++;
 				m = m/p;
 			}
+			ans = ans * (cnt + 1);
 		}
 		//gp to the next position
 		i++;
 		p = primes[i];	
 	}
 	if(m!=1){
-		factors.push_back(m);
+		ans = ans*2;
 	}
-	return factors;
+	return ans;
 
 }
 int main(){
@@ -67,10 +68,8 @@ int main(){
 	while(t--){
 		int no;
 		cin>>no;
-		vector<int> factors = factorize(no, primes);
-		for(auto f : factors){
-			cout << f << " "<<endl;
-		}
+		int divs = no_of_divisors(no, primes);
+		cout << divs << endl;
 	}
 
 

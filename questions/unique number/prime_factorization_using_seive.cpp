@@ -31,6 +31,10 @@ vector<int> primeSeive(int *p, int n){
 	return primes;
 }
 
+//This returns a vector of prime factors
+vector<int> factorize(int m, vector<int>, &primes){
+	
+}
 int main(){
 	/* code */
 	int N = 1000000;

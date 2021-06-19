@@ -14,8 +14,21 @@ vector<int> primeSeive(int *p, int n){
 	//Seive login to mark non prime numbers as zero
 	//1. Optimization - Iterate only over odd numbers
 	for(int i=3; i<=n; i+=2){
-		if(p[i])
+		if(p[i]){
+			//Mark all the multiples of that number as not prime
+			for(int j=i*i; j<=n; j+= 2*i){
+				p[j] = 0;
+			}
+		}
 	}
+	vector<int> primes;
+	primes.push_back(2);
+	for(int i=0; i<=n; i+=2){
+		if(p[i] == 1){
+			primes.push_back(i);
+		}
+	}
+	return primes;
 }
 
 int main(){

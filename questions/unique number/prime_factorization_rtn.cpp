@@ -22,7 +22,7 @@ void printFactors(int n){
 	}
 	//print the factors
 	for(auto p:factors){
-		cout << p.first<<" "<<p.second<<endl;
+		cout << p.first<<"^"<<p.second<<endl;
 	}
 	return;
 }

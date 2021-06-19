@@ -32,15 +32,16 @@ vector<int> primeSieve(int *p, int n){
 }
 
 //This returns a vector of prime factors
-int factorize(int m, vector<int> &primes){
-	vector<int> factors;
-	factors.clear();
+int no_of_divisors(int m, vector<int> &primes){
+	
 	int i=0;
 	int p = primes[0];
 	while(p*p<=m){
+
 		if(m%p==0){
-			factors.push_back(p);
+			int cnt = 0;	
 			while(m%p==0){
+				cnt++;
 				m = m/p;
 			}
 		}

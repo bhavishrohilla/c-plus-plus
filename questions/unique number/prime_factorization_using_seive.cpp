@@ -2,7 +2,7 @@
 #include<vector>
 using namespace std;
 
-vector<int> primeSeive(int *p, int n){
+vector<int> primeSieve(int *p, int n){
 	p[0] = p[1] = 0;
 	p[2] = 1;
 
@@ -32,7 +32,7 @@ vector<int> primeSeive(int *p, int n){
 }
 
 //This returns a vector of prime factors
-vector<int> factorize(int m, vector<int>, &primes){
+vector<int> factorize(int m, vector<int> &primes){
 	vector<int> factors;
 	factors.clear();
 	int i=0;
@@ -58,9 +58,11 @@ int main(){
 	/* code */
 	int N = 1000000;
 	int p[N] = {0};
-	vector<int> primes = primeSeive(p,100);
+	vector<int> primes = primeSieve(p,100);
+
 	int t;
 	cin>>t;
+
 	while(t--){
 		int no;
 		cin>>no;

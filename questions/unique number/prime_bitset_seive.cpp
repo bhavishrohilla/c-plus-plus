@@ -24,15 +24,23 @@ bool isPrime(long long No){
 	if(No<=n){
 		return b[No] == 1 ? true : false;
 	}
-	for(int i=0; primes[i]*primes[i]<=No; i++){
+	for(int i=0; primes[i]*(long long) primes[i]<=No; i++){
 		if(No%primes[i]==0){
 			return false;
 		}
 	}
+	return true;
 }
 
 int main(){
+	if(isPrime(21476854)){
+		cout << "ys it is";
+	}
+	else{
+		cout << "No its not";
+	}
 
+	return 0;
 
 
 }

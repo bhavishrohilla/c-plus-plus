@@ -11,7 +11,16 @@ int main(){
 		ll n;
 		cin >> n;
 
-		ll subsets = (1<<8);
+		ll subsets = (1<<8)-1;
+		for(ll i=1; i<=subsets; i++){
+			ll denom = 1ll;
+			ll setBits = __builtin_popcount(i);
+
+
+		}
+
+
+
 	}
 
 

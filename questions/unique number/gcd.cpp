@@ -12,3 +12,5 @@ int main(){
 
 	return 0;
 }
+
+//Formula --> GCD * LCM = a * b

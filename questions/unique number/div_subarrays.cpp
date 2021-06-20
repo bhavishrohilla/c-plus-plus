@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 #define ll long
 
@@ -23,7 +24,7 @@ int main(){
 		}
 		ll ans = 0;
 		for(int i=0; i<n; i++){
-			int m = pre[i];
+			ll m = pre[i];
 			ans += m*(m-1)/2;
 		}
 		cout << ans << endl;

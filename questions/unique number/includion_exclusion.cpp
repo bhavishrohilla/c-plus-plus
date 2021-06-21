@@ -29,18 +29,11 @@ int main(){
 			}
 			else{
 				ans -= n/denom;
-
-
-
-
 			}
-
-
 		}
-
-
-
+		cout << ans << endl;
 	}
+	return 0;
 
 
 

@@ -2,12 +2,10 @@
 using namespace std;
 
 int factorial(int n){
-	int ans = 1;
-	while(n>=1){
-		ans = ans * n;
-		n = n-1;
+	//base case
+	if(n==0){
+		return 1;
 	}
-	return ans;
 }
 
 int main(){

@@ -8,7 +8,9 @@ int fibo(int n){
 	}
 
 	//recursion case
-	return fibo(n-1) + fibo(n-2);
+	int f1 =  fibo(n-1);
+	int f2 =  fibo(n-2);
+	return fibo(1) + fibo(2);
 }
 
 int main(){

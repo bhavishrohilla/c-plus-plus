@@ -3,9 +3,9 @@ using namespace std;
 
 void inc(int n){
 	//base case
-	int dig = 1;
+	int dig = 1 ;
 	cout << dig << ",";
-	
+
 }
 
 void dec(int n){

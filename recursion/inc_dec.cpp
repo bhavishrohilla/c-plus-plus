@@ -3,9 +3,11 @@ using namespace std;
 
 void inc(int n){
 	//base case
-	int dig = 1 ;
-	cout << dig << ",";
-
+	if(n==0){
+		return;
+	}
+	inc(n-1);
+	cout << n << ",";
 }
 
 void dec(int n){
@@ -20,7 +22,8 @@ void dec(int n){
 
 int main(){
 	int n;
-	cin >> n;
+	cin >> n; 
 	inc(n);
+	cout << endl;
 	dec(n); 
 }

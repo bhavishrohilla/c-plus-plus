@@ -2,11 +2,12 @@
 using namespace std;
 
 int multi(int n, int t){
-	if(t==1){
-		return n* ;
+	if(t==0){
+		return 0 ;
 	}
-	int m1 = n + multi(n,t-1);
-	return m1;
+	int m1 = multi(n,t-1);
+	int ans = n + m1;
+	return ans;
 }
 
 int main(){

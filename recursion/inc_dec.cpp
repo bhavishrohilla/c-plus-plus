@@ -2,6 +2,10 @@
 using namespace std;
 
 void inc(int n){
+	//base case
+	int dig = 1;
+	cout << dig << ",";
+	
 }
 
 void dec(int n){
@@ -10,11 +14,13 @@ void dec(int n){
 		return;
 	}
 	//recursion case
+	cout << n << ",";
+	dec(n-1);
 }
 
 int main(){
 	int n;
 	cin >> n;
-	cout << inc(n) << endl;
-	cout << dec(n)<<endl;
+	inc(n);
+	dec(n); 
 }

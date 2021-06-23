@@ -27,6 +27,7 @@ int main(){
 
 	int a,n;
 	cin >> a >> n;
-	cout << power(a,n);
+	cout << power(a,n)<<endl;
+	cout << fastPower(a,n);
 
 }

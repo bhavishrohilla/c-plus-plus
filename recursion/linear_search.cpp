@@ -1,6 +1,10 @@
 #include<iostream>
 using namespace std;
 
+int lastOccur(int *a, int n, int key){
+	
+}
+
 int firstOccur(int a[], int n, int key){
 	if(n==0){
 		return -1;

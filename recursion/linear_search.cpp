@@ -1,8 +1,27 @@
 #include<iostream>
 using namespace std;
 
-int lastOccur(int *a, int n, int key){
+void allOccur(int *a, int i, int n, int key){
 	
+}
+
+int lastOccur(int *a, int n, int key){
+	//base case
+	if(n==0){
+		return -1;
+	}
+	int i = lastOccur(a+1, n-1, key);
+	 if(i==-1){
+	 	if(a[0]==key){
+	 		return 0;
+	 	}
+	 	else{
+	 		return -1;
+	 	}
+
+	 }
+	 //otherwise if i returned by subproblem is -1
+	 return i+1;
 }
 
 int firstOccur(int a[], int n, int key){
@@ -38,7 +57,7 @@ int main(){
 	int key = 7;
 	int n = sizeof(arr)/sizeof(int);
 
-cout << firstOccur(arr, n, key);
-
+	cout <<" First Occurence - "<< firstOccur(arr, n, key)<<endl;
+	cout << " Last Occurence - " <<lastOccur(arr, n ,key);
 	return 0;
 }

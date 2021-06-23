@@ -2,7 +2,13 @@
 using namespace std;
 
 void allOccur(int *a, int i, int n, int key){
-	
+	if(i==n){
+		return;
+	}
+	if(a[i]==key){
+		cout << i << ",";
+	}
+	allOccur(a, i+1, n, key);
 }
 
 int lastOccur(int *a, int n, int key){
@@ -59,5 +65,6 @@ int main(){
 
 	cout <<" First Occurence - "<< firstOccur(arr, n, key)<<endl;
 	cout << " Last Occurence - " <<lastOccur(arr, n ,key);
+	allOccur(arr ,0,n,key);
 	return 0;
 }

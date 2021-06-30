@@ -1,10 +1,10 @@
 #include<iostream>
 using namespace std;
 
-void replacePi{char a[], int i}{
+void replacePi(char a[], int i){
 	//base case
-	if(a[i]=='\0' or a[i+1] = "/0"){
-		return 
+	if(a[i]=='\0' or a[i+1] =='\0'){
+		return;
 	}
 	//rec case
 	//look for piu at current location
@@ -13,11 +13,11 @@ void replacePi{char a[], int i}{
 		int j = i+2;
 
 		//take j to the end to the array
-		while(a[j]!=0){
+		while(a[j]!='\0'){
 			j++;
 		}
 		//shifting
-		while(j>i+2){
+		while(j>=i+2){
 			a[j+2] = a[j];
 			j--;
 		}
@@ -26,6 +26,7 @@ void replacePi{char a[], int i}{
 		a[i+1] = '.';
 		a[i+2] = '1';
 		a[i+3] = '4';
+		replacePi(a,i+4);
 	}
 	else{
 		//go to the position
@@ -35,7 +36,10 @@ void replacePi{char a[], int i}{
 }
 
 int main(){
-
+	char a[1000];
+	cin >> a;
+	replacePi(a,0);
+	cout << a << endl;
 
 	return 0;
 }

@@ -8,7 +8,9 @@ void move(int n, char src, char helper, char dest){
 		return;
 	}
 	//rec case
-	
+	//move n-1 disks from source to helper
+	move(n-1,src,dest,helper);
+	cout << "Shift disk"<< n <<"from" << src << "to" << dest << endl;	
 
 }
 

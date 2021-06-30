@@ -12,7 +12,7 @@ void move(int n, char src, char helper, char dest){
 	move(n-1,src,dest,helper);
 
 	//last disk to destination
-	cout << "Shift disk"<< n <<"from" << src << "to" << dest << endl;	
+	cout << "Shift disk "<< n <<" from " << src << " to " << dest << endl;	
 	move(n-1,helper,src,dest);
 }
 

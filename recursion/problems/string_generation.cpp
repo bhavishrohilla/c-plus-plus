@@ -26,6 +26,7 @@ void generate_strings(char *in, char *out, int i, int j){
 			generate_strings(in,out,i+2,j+1);
 		}
 	}
+	return;
 }
 
 int main(){
@@ -34,6 +35,7 @@ int main(){
 	cin >> a;
 
 	char out[100];
+	generate_strings(a,out,0,0);
 
 
 	return 0;

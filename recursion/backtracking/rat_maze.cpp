@@ -16,7 +16,16 @@ bool ratInMaze(char maze[10][10], int soln[][10], int i, int j, int m, int n){
 	}
 	//Assume solution exists through current cell
 	soln[i][j] = 1;
-	
+
+	bool rightSuccess = ratInMaze(maze,soln,i,j+1,m,n);
+	bool downSuccess = ratInMaze(maze,soln,i+1,j,m,m);
+
+	//backtracking
+
+	if(rightSuccess||downSuccess){
+		return true;
+	}
+	return false;
 
 }
 

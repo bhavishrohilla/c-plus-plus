@@ -11,8 +11,18 @@ bool solveSudoku(int mat[][9], int i, int j, int n){
 	if(j==n){
 		return solveSudoku(mat,i+1,0,n);
 	}
+	//Skip the prefilled cells
+	if(mat[i][j]!=0){
+		return solveSudoku(mat,i,j+1,n);
+	}
 
 	//rec case
+	//Fill the current cell with possible options
+	for(int number=0; number<=n; number++){
+		if(canPlace(mat,i,j,n,number)){
+			
+		}
+	}
 }
 
 int main(){

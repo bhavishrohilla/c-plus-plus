@@ -5,6 +5,11 @@ bool ratInMaze(char maze[10][10], int soln[][10], int i, int j, int m, int n){
 	if(i==m && i==n){
 		soln[m][n] = 1;
 		//print the path
+		for(int i=0; i<=m; i++){
+			for(int j=0; j<=n; j++){
+				cout << soln[i][j] << " ";
+			}
+		}
 		return true;
 	}
 	//Rat should be inside grid
@@ -21,6 +26,8 @@ bool ratInMaze(char maze[10][10], int soln[][10], int i, int j, int m, int n){
 	bool downSuccess = ratInMaze(maze,soln,i+1,j,m,m);
 
 	//backtracking
+	soln[i][j] = 0;
+
 
 	if(rightSuccess||downSuccess){
 		return true;

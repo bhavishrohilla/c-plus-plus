@@ -9,7 +9,9 @@ bool ratInMaze(char maze[10][10], int soln[][10], int i, int j, int m, int n){
 			for(int j=0; j<=n; j++){
 				cout << soln[i][j] << " ";
 			}
+			cout << endl;
 		}
+		cout<<endl;
 		return true;
 	}
 	//Rat should be inside grid
@@ -21,7 +23,8 @@ bool ratInMaze(char maze[10][10], int soln[][10], int i, int j, int m, int n){
 	}
 	//Assume solution exists through current cell
 	soln[i][j] = 1;
-
+	
+	//rec case
 	bool rightSuccess = ratInMaze(maze,soln,i,j+1,m,n);
 	bool downSuccess = ratInMaze(maze,soln,i+1,j,m,m);
 
@@ -45,7 +48,11 @@ int main(){
 	};
 	int soln[10][10] = {0};
 
-
+	int m = 4, n =4;
+	bool ans = ratInMaze(maze,soln,0,0,m-1,n-1);
+	if(ans == false){
+		cout << "Path doesnt exist";
+	}
 
 	return 0;
 }

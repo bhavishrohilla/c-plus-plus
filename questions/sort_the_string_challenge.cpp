@@ -12,6 +12,10 @@ string extractStringAtKey(string str, int key){
 	return(string)s;
 }
 
+bool numericCompare(pair<string,string> s1, pair<string,string> s2){
+	
+}
+
 int main(){
 
 	int n;
@@ -35,6 +39,7 @@ int main(){
 	else{
 		sort(strPair, strPair+n, lexicoCompare);
 	}
+
 
 	return 0;
 }

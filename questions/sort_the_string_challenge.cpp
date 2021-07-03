@@ -12,9 +12,23 @@ string extractStringAtKey(string str, int key){
 	return(string)s;
 }
 
-bool numericCompare(pair<string,string> s1, pair<string,string> s2){
-	
+int convertToInt(string s){
+	int ans = 0;
+	int p =1;
+	for(int i=s.length()-1; i>=0; i--){
+		ans += ((s[i]-'0')*p);
+		p = p*10;
+	}
+	return ans;
 }
+
+bool numericCompare(pair<string,string> s1, pair<string,string> s2){ string
+	key1, key2;
+	key1 = s1.second;
+	key2 = s2.second;
+
+	return convertToInt(key1) < convertToInt(key2);
+ }
 
 int main(){
 

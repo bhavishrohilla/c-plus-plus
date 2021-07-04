@@ -11,6 +11,7 @@ public:
 };
 int main(){
 	//creating an object
+	Car arr[20];	//store info of max 20 cars
 	Car c;
 
 	cout <<"C-Name " <<sizeof(c.name) << endl;

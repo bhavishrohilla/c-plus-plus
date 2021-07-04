@@ -8,6 +8,10 @@ public:
 	int model_no;
 	char name[20];
 
+	float get_discounted_price(float x){
+		return price*(1.0-x);
+	}
+
 };
 int main(){
 	//creating an object
@@ -25,6 +29,12 @@ int main(){
 	cout <<"C-Price " <<sizeof(c.price) <<" "<<c.price <<endl;
 	cout <<"C-model " <<sizeof(c.model_no)<<" "<<c.model_no << endl;
 	cout << "Car " << sizeof(Car) << endl;
+
+	cout << "Enter the discout - ";
+	int discout;
+	cin >> discout;
+
+	cout << c.get_discounted_price(discout);
 
 
 	return 0;

@@ -19,6 +19,14 @@ public:
 		name = new char[strlen(n)+1];
 		strcpy(name,n);
 	}
+
+	Car(Car &x){
+		price = x.price;
+		model_no = x.model_no;
+		name = new char[strlen(x.name)+1];
+		strcpy(name,x.name);
+	}
+
 	void set_Price(int p){
 		price = p;
 	}
@@ -33,7 +41,7 @@ public:
 int main(){
 	Car c(111,100,"BMW");	//parametrised constructor
 	Car d(c);	//Copy COnstructor
-	c.name[0] ='A';
+	d.name[0] ='A';
 	c.print();
 	d.print();
 

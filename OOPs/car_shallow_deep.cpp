@@ -40,6 +40,7 @@ public:
 
 int main(){
 	Car c(111,100,"BMW");	//parametrised constructor
+	cout << c.msp<<endl;
 	Car d(c);	//Copy COnstructor
 	d.name[0] ='A';
 	c.print();

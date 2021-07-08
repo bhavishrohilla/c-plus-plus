@@ -9,7 +9,7 @@ private:
 public:
 	int model_no;
 	char *name;
-	const int msp = 99;
+	const int msp = 99;	//constant data member (cannot be altered)
 	Car():msp(99){
 		name = NULL;
 	}

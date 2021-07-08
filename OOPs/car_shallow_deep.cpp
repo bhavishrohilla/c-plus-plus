@@ -9,11 +9,11 @@ private:
 public:
 	int model_no;
 	char *name;
-
-	Car(){
+	const int msp = 99;
+	Car():msp(99){
 		name = NULL;
 	}
-	Car(float p, int m, char *n){
+	Car(float p, int m, char *n,int minprice=99):price(p),msp(minprice){
 		price = p;
 		model_no = m;
 		name = new char[strlen(n)+1];

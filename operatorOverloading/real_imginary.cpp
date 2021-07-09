@@ -57,6 +57,17 @@ public:
 		}
 	}
 };
+
+istream& operator>>(istream& is, Complex &c){
+	int r1,i1;
+	cin >> r1>>i1;
+	c.setReal(r1);
+	c.setImg(i1);
+}
+
+ostream& operator<<(ostream& os, Complex &c){
+	c.print();
+}
 int main(){
 	
 	Complex c1(5,3);
@@ -69,9 +80,17 @@ int main(){
 
 	//c1.add(c2);
 	//c1.print();	
-	
+
 	!c1;
 	c1.print();
 	cout << c1["img"];
+
+	//<<,>>
+	cout << endl;
+	Complex d1, d2;
+	cin>>d1>>d2;
+	cout << d1 << d2;
+
 	return 0;
+
 }

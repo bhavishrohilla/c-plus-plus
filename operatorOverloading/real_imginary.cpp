@@ -63,10 +63,12 @@ istream& operator>>(istream& is, Complex &c){
 	cin >> r1>>i1;
 	c.setReal(r1);
 	c.setImg(i1);
+	return is;
 }
 
 ostream& operator<<(ostream& os, Complex &c){
 	c.print();
+	return os;
 }
 int main(){
 	

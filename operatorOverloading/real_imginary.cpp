@@ -46,6 +46,16 @@ public:
 	void operator!(){
 		img *= -1;
 	}
+
+	int operator[](string s){
+		cout  << real <<" + " << img << "i " <<s << endl;
+		if(s=="real"){
+			return real;
+		}
+		if(s=="img"){
+			return img;
+		}
+	}
 };
 int main(){
 	
@@ -62,5 +72,6 @@ int main(){
 	
 	!c1;
 	c1.print();
+	cout << c1["img"];
 	return 0;
 }

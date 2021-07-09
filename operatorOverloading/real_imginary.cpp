@@ -42,6 +42,10 @@ public:
 		real += x.real;
 		img += x.img;
 	}
+
+	void operator!(){
+		img *= -1;
+	}
 };
 int main(){
 	
@@ -52,7 +56,11 @@ int main(){
 	c2.setImg(8);
 	c2.setReal(6);
 	c2.print();
-	c1.add(c2);
+
+	//c1.add(c2);
+	//c1.print();	
+	
+	!c1;
 	c1.print();
 	return 0;
 }

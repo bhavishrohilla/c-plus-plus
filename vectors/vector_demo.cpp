@@ -44,6 +44,16 @@ int main(){
 	for(int x:u){
 		cout << x<<",";
 	}
+	cout << endl;
+
+	//Understans at memeory level,what are the differnces in the two
+	cout << "Size " <<u.size()<<endl;
+	cout <<"capacity" << u.capacity()<<endl; //size of underlined array
+	cout << "Max size" <<u.max_size()<<endl;	//maximum no. of elements a vector can hold in worst case
+
+	cout << "Size " <<d.size()<<endl;
+	cout <<"capacity" << d.capacity()<<endl; //size of underlined array
+	cout << "Max size" <<d.max_size()<<endl;	//maximum no. of elements a vector can hold in worst case
 
 	return 0;
 }

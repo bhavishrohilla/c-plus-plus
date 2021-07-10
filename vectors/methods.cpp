@@ -19,7 +19,34 @@ int main(){
 
 	//erasing range of elements
 	d.erase(d.begin()+2,d.begin()+5);
-	
+
+	//size
+	cout << d.size()<<endl;
+	cout << d.capacity()<<endl;
+
+	//we avoid the shrink
+	d.resize(8);
+	cout << d.capacity()<<endl;
+
+	//remove all the elements
+	d.clear();
+
+	//empty
+	if(d.empty()){
+		cout << "this is an empty vector";
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 	for(int x:d){

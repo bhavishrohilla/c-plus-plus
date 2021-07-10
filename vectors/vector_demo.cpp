@@ -11,5 +11,11 @@ int main(){
 
 	vector<int> d{1,2,3,10,13};
 
+	//Iterate over thr vector
+	for(int i=0; i<c.size();i++){
+		cout << c[i]<<",";
+	}
+
+
 	return 0;
 }

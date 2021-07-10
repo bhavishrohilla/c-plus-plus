@@ -27,7 +27,7 @@ int main(){
 
 	//for each loop
 	for(auto p:v){
-		cout << "Car "<<p.first
+		cout << "Car "<<p.first <<","<< p.second<<endl;
 	}
 
 

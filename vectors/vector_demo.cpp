@@ -36,6 +36,9 @@ int main(){
 	vector<int> u;
 	int n;
 	cin>>n;
+
+	//To avoid doubling, we will use reserve function
+	u.reserve(1000);
 	for(int i=0; i<n; i++){
 		int no;
 		cin >> no;

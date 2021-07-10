@@ -36,18 +36,11 @@ int main(){
 		cout << "this is an empty vector";
 	}
 
-
-
-
-
-
-
-
-
-
-
-
-
+	d.push_back(10);
+	d.push_back(11);
+	d.push_back(34);
+	cout << d.front()<<endl;
+	cout << d.back()<<endl;
 
 	for(int x:d){
 		cout << x << ",";

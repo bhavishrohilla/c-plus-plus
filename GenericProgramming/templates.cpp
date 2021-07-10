@@ -24,6 +24,19 @@ ForwardIterator search(ForwardIterator start, ForwardIterator end, T key){
 	return end;
 }
 
+class Book{
+public:
+	string name;
+	int price;
+	Book(){
+
+	}
+	Book(string name, int price){
+		this->name = name;
+		this->price = price;
+	}
+};
+
 int main(){
 	/*
 	int a[] = {1,5,3,7,8,6,2};
@@ -35,6 +48,7 @@ int main(){
 	//cout << search(a,n,key);
 	cout << search(b,3,k);
 	*/
+	/*
 	list<int>l;
 	l.push_back(1);
 	l.push_back(2);
@@ -47,8 +61,19 @@ int main(){
 	else{
 		cout << *it << endl;
 	}
+	*/
 
+	Book b1("C++", 100);
+	Book b2("Python", 120);
+	Book b3("Java", 130);
+	Book b4(b1);
 
+	list<Book> l;
+	l.push_back(b1);
+	l.push_back(b2);
+	l.push_back(b3);
+
+	Book bookToFind("C++",110); //new edition
 
 	return 0;
 }

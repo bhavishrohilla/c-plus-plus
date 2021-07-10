@@ -12,35 +12,45 @@ public:
 
 	}
 	Car(string n, int x, int y){
-		name = n;
+		car_name = n;
 		this->x = x;
 		this->y = y;
 	}
-	void dist(){
-		//returns square of the distance from origin
-		return x*x + y*y;
+	int dist(){
+		//returns square of the distance from origin	
+		return (x*x + y*y);
 
 
 	}
-}
+};
 
-bool compare(){
+bool compare(Car A, Car B){
+	int da = A.dist();
+	int db = B.dist();
+
+	if(da==db){
+		return A.car_name.length() < B.car_name.length();
+	}
+	return da<db;
 }
 
 int main(){
 	int n;
 	cin >> n;
-	vector<pair<int,int>> v;
+	vector<Car> v;
+
 	for(int i=0; i<n; i++){
 		int x,y;
+		string name;
 		cin >>name >>x >> y;
-		v.push_back(make_pair(x,y));
+		Car temp(name,x,y);
+		v.push_back(temp);
 	}
 	sort(v.begin(),v.end(),compare);
 
 	//for each loop
-	for(auto p:v){
-		cout << "Car "<<p.first <<","<< p.second<<endl;
+	for(auto c:v){
+		cout << "Car "<<c.car_name << "Dist "<<c.dist()<<"location"<<c.x<<","<<c.y<<endl ;
 	}
 
 

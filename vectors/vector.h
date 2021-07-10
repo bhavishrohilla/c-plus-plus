@@ -13,10 +13,10 @@ public:
 	}
 	void push_back(const int d){
 		if(cs==ms){
-			//Array is full
+			//Array if full
 			int *oldArr = arr;
-			arr = new int[2*ts];
-			ts = 2*ts;
+			arr = new int[2*ms];
+			ms = 2*ms;
 			for(int i=0; i<cs;i++){
 				arr[i]=oldArr[i];
 
@@ -42,15 +42,18 @@ public:
 		return cs==0;
 	}
 	int capacity() const{
-		return ts;
+		return ms;
 
 	}
 	int at(const int i){
 		return arr[i];
 	}
+	int size(){
+		return cs;
+	}
 
 	//opertor overloading
-	void operator[](const int i){
+	int operator[](const int i){
 		return arr[i];
 	}
 

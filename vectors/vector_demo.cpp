@@ -30,7 +30,20 @@ int main(){
 	for(int x:d){
 		cout << x<<",";
 	}
+	cout << endl;
 
+	//Some functions
+	vector<int> u;
+	int n;
+	cin>>n;
+	for(int i=0; i<n; i++){
+		int no;
+		cin >> no;
+		u.push_back(no);	//Adds element to the end of the vector
+	}
+	for(int x:u){
+		cout << x<<",";
+	}
 
 	return 0;
 }

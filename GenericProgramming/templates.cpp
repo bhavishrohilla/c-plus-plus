@@ -81,7 +81,7 @@ int main(){
 	Book b3("Java", 130);
 	Book b4(b1);
 
-	list<Book> l;
+	vector<Book> l;
 	l.push_back(b1);
 	l.push_back(b2);
 	l.push_back(b3);

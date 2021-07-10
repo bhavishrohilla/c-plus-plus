@@ -4,7 +4,15 @@ using namespace std;
 
 int main(){
 	vector<int> d{1,2,3,10,14};
+	//push back->add element to the last
 	d.push_back(16);
+
+	//pop back-> removes the last element
+	d.pop_back();
+
+
+	//Insert some elements in the middle
+	d.insert(d.begin()+3, 100);
 	for(int x:d){
 		cout << x << ",";
 	}

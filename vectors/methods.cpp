@@ -18,6 +18,8 @@ int main(){
 	d.erase(d.begin()+2);
 
 	//erasing range of elements
+	d.erase(d.begin()+2,d.begin()+5);
+	
 
 
 	for(int x:d){

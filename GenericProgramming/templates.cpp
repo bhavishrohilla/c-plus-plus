@@ -1,5 +1,6 @@
 #include<iostream>
 #include<list>
+#include<vector>
 using namespace std;
 
 template<typename T>
@@ -13,10 +14,12 @@ int search(T arr[], int n, T key){
 	return n;
 }
 
-template<class ForwardIterator, class T>
-ForwardIterator search(ForwardIterator start, ForwardIterator end, T key){
+
+//Templates + Iterator + Comparators
+template<class ForwardIterator, class T, class Compare>
+ForwardIterator search(ForwardIterator start, ForwardIterator end, T key, Compare cmp){
 	while(start!=end){
-		if(*start==key){
+		if(cmp(*start,key)){
 			return start;
 		}
 		start++;
@@ -34,6 +37,16 @@ public:
 	Book(string name, int price){
 		this->name = name;
 		this->price = price;
+	}
+};
+
+class BookCompare{
+public:
+	bool operator()(Book A, Book B){
+		if(A.name==B.name){
+			return true;
+		}
+		return false;
 	}
 };
 
@@ -74,6 +87,19 @@ int main(){
 	l.push_back(b3);
 
 	Book bookToFind("C++",110); //new edition
+	BookCompare cmp;
 
+	auto it = search(l.begin(), l.end(),bookToFind,cmp);
+	if(it!=l.end()){
+		cout << "Book Found in the library";
+	}
+	else{
+		cout << "Not Found";
+	}
+	/*
+	if(cmp(b1,bookToFind)){
+		cout << "True same books!";
+	}
+	*/
 	return 0;
 }

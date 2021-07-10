@@ -7,12 +7,19 @@ int main(){
 	//push back->add element to the last
 	d.push_back(16);
 
-	//pop back-> removes the last element
+	//pop back-> removes the last element O(N)
 	d.pop_back();
 
 
-	//Insert some elements in the middle
-	d.insert(d.begin()+3, 100);
+	//Insert some elements in the middle O(N)
+	d.insert(d.begin()+3, 4,100);
+
+	//Erase the elements from the middle
+	d.erase(d.begin()+2);
+
+	//erasing range of elements
+
+
 	for(int x:d){
 		cout << x << ",";
 	}

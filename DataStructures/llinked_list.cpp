@@ -136,11 +136,24 @@ bool searchRecursive(node*head, int key){
 	}
 }
 
+void input(node*&head){
 
+}
+node* take_input_2(){
+	int d;
+	node*head=NULL;
+
+	while(d!=-1){
+		insertAtHead(head,d);
+		cin>>d;
+	}
+	return head;
+}
 
 int main(){
 
 	node*head = NULL;
+	/*
 	insertAtHead(head,5);
 	insertAtHead(head,2);
 	insertAtHead(head,1);
@@ -161,6 +174,7 @@ int main(){
 	else{
 		cout << "Not Found";
 	}
+	*/
 
 	return 0;
 }

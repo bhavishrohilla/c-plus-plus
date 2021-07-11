@@ -5,7 +5,7 @@ using namespace std;
 
 
 int main(){
-	Vector v;
+	Vector<char> v;
 	v.push_back(1);	//Capacity 1
 	v.push_back(2);	//Capacity 2
 	v.push_back(3);	//Capacity 4(push_back will add element as well double the size of the array)

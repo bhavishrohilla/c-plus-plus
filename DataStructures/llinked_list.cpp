@@ -37,11 +37,11 @@ void build(){
 //Passing a pointert by reference
 void insertAtHead(node*&head, int d){
 	if(head==NULL){
-		head = new Node(d);
+		head = new node(d);
 		return;
 	}
 
-	Node *n = new Node(d);
+	node *n = new node(d);
 	n->next = head;
 	head = n;
 }
@@ -51,6 +51,7 @@ void print(node*head){
 		cout << head->data<<"->";
 		head = head->next;
 	}
+	cout << endl;
 }
 
 int main(){
@@ -62,7 +63,7 @@ int main(){
 	insertAtHead(head,0);
 
 	print(head);
-
+	print(head);
 }
 	
 

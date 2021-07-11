@@ -136,10 +136,7 @@ bool searchRecursive(node*head, int key){
 	}
 }
 
-void input(node*&head){
-
-}
-node* take_input_2(){
+node* take_input(){
 	int d;
 	node*head=NULL;
 
@@ -152,7 +149,8 @@ node* take_input_2(){
 
 int main(){
 
-	node*head = NULL;
+	node*head = take_input();
+	print(head);
 	/*
 	insertAtHead(head,5);
 	insertAtHead(head,2);

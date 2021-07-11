@@ -109,6 +109,35 @@ void deleteHead(node*head){
 	head = temp;
 }
 
+//Search Operation
+//Linear Search
+bool search(node*head, int key){
+	node*temp = head;
+	while(temp!=NULL){
+		if(head->data==key){
+			return true;
+		}
+		head = head->next;
+	}
+	return false;
+}
+
+//recursively
+bool searchRecursive(node*head, int key){
+	if(head==NULL){
+		return false;
+	}
+	//rec case checkat head,remaining linked list
+	if(head->data==key){
+		return true;
+	}
+	else{
+		return searchRecursive(head->next, key);
+	}
+}
+
+
+
 int main(){
 
 	node*head = NULL;
@@ -123,6 +152,17 @@ int main(){
 	print(head);
 	deleteHead(head);
 	print(head);
+
+	int key;
+	cin >> key;
+	if(searchRecursive(head,key)){
+		cout << "Element Found";
+	}
+	else{
+		cout << "Not Found";
+	}
+
+	return 0;
 }
 	
 

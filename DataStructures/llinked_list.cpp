@@ -151,6 +151,8 @@ int main(){
 
 	node*head = take_input();
 	print(head);
+
+	
 	/*
 	insertAtHead(head,5);
 	insertAtHead(head,2);

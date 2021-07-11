@@ -34,7 +34,39 @@ public:
 void build(){
 
 }
+//Passing a pointert by reference
+void insertAtHead(node*&head, int d){
+	if(head==NULL){
+		head = new Node(d);
+		return;
+	}
 
-void insert(){
+	Node *n = new Node(d);
+	n->next = head;
+	head = n;
+}
+
+void print(node*head){
+	while(head!=NULL){
+		cout << head->data<<"->";
+		head = head->next;
+	}
+}
+
+int main(){
+
+	node*head = NULL;
+	insertAtHead(head,3);
+	insertAtHead(head,2);
+	insertAtHead(head,1);
+	insertAtHead(head,0);
+
+	print(head);
 
 }
+	
+
+
+
+
+

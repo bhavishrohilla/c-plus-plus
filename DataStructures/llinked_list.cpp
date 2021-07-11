@@ -147,12 +147,20 @@ node* take_input(){
 	return head;
 }
 
+void operator<<(ostream &os, node*head){
+	print(head);
+	return;
+}
+
 int main(){
 
 	node*head = take_input();
-	print(head);
+	node*head2 = take_input();
+	cout << head;
 
-	
+	//print(head);
+
+
 	/*
 	insertAtHead(head,5);
 	insertAtHead(head,2);

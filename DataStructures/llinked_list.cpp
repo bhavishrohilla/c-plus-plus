@@ -212,7 +212,7 @@ node* merge(node* a, node* b){
 	}
 	//take a temporary head pointer
 	node*c;
-	of(a->data < b->data){
+	if(a->data < b->data){
 		c= a;
 		c->next = merge(a->next, b);
 	}
@@ -221,6 +221,25 @@ node* merge(node* a, node* b){
 		c->next = merge(a,b->next);
 	}
 	return c;
+}
+
+node* mergeSort(node*head){
+	//base case
+	if(head==NULL or head->next==NULL){
+		return head;
+	}
+	//rec case
+	//1.break
+	node* mmid = midpoint(head);
+	node* a = head;
+	node* b = mid->next;
+	mid->next = NULL;
+
+	//2.rec solve two parts
+	a = mergeSort(a);
+	b = mergeSort(b);
+
+	//merge them
 }
 
 int main(){

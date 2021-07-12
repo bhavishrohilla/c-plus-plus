@@ -202,16 +202,42 @@ node* midpoint(node*head){
 	return slow;
 }
 
+node* merge(node* a, node* b){
+	//base case
+	if(a==NULL){
+		return b;
+	}
+	if(b==NULL){
+		return a;
+	}
+	//take a temporary head pointer
+	node*c;
+	of(a->data < b->data){
+		c= a;
+		c->next = merge(a->next, b);
+	}
+	else{
+		c = b;
+		c->next = merge(a,b->next);
+	}
+	return c;
+}
+
 int main(){
 
 	//node*head = take_input();
 	//node*head2 = take_input();
+	node*head2;
 	node*head;
-	cin >> head;
-	cout << head;
+	cin >> head >> head2;
+	cout << head << head2;
+
+	node* newHead = merge(head, head2);
+	cout << newHead<<endl;
 	//head = recReverse(head);
 	
-	node* mid = midpoint(head);
+	//node* mid = midpoint(head);
+	
 	cout << mid->data<<endl;
 
 	//print(head);

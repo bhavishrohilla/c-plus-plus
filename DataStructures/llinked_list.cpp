@@ -188,6 +188,8 @@ node* recReverse(node*head){
 	}
 	head->next = NULL;
 	temp->next = head;
+	return shead;
+	
 }
 
 int main(){

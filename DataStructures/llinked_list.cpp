@@ -230,7 +230,7 @@ node* mergeSort(node*head){
 	}
 	//rec case
 	//1.break
-	node* mmid = midpoint(head);
+	node* mid = midpoint(head);
 	node* a = head;
 	node* b = mid->next;
 	mid->next = NULL;
@@ -240,19 +240,24 @@ node* mergeSort(node*head){
 	b = mergeSort(b);
 
 	//merge them
+	node* c = merge(a,b);
+	return c;
+
 }
 
 int main(){
 
 	//node*head = take_input();
 	//node*head2 = take_input();
-	node*head2;
 	node*head;
+	cin >> head;
+/*	node*head;
 	cin >> head >> head2;
 	cout << head << head2;
-
-	node* newHead = merge(head, head2);
-	cout << newHead<<endl;
+*/
+	cout << head;
+	head = mergeSort(head);
+	cout << head<<endl;
 	//head = recReverse(head);
 	
 	//node* mid = midpoint(head);

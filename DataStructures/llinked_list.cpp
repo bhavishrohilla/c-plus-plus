@@ -147,15 +147,57 @@ node* take_input(){
 	return head;
 }
 
-void operator<<(ostream &os, node*head){
+ostream& operator<<(ostream &os, node*head){
 	print(head);
-	return;
+	return os;	//cout
+}
+
+istream& operator>>(istream &is, node*&head){
+	head = take_input();
+	return is;
+}
+
+void reverse(node*&head){
+	node*C = head;
+	node*P = NULL;
+	node*N;
+	while(C!=NULL){
+		//save the enxt node
+		N =C->next;
+		//make the current node point to previous
+		C->next = P;
+		//update P and C take them 1 step forward
+		P = C;
+		C = N;
+	}
+	head = P;
+}
+
+node* recReverse(node*head){
+	//smallest lionked list
+	if(head->next==NULL or head==NULL){
+		return head;
+	}
+	//rec case
+	node* shead = recReverse(head->next);
+
+	node* temp = shead;
+	while(temp->next!=NULL){
+		temp = temp->next;
+
+	}
+	head->next = NULL;
+	temp->next = head;
 }
 
 int main(){
 
-	node*head = take_input();
-	node*head2 = take_input();
+	//node*head = take_input();
+	//node*head2 = take_input();
+	node*head;
+	cin >> head;
+	cout << head;
+	reverse(head);
 	cout << head;
 
 	//print(head);

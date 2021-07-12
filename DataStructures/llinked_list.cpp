@@ -181,15 +181,25 @@ node* recReverse(node*head){
 	//rec case
 	node* shead = recReverse(head->next);
 
-	node* temp = shead;
-	while(temp->next!=NULL){
-		temp = temp->next;
-
-	}
-	head->next = NULL;
+	node* temp = head->next;
+	temp->next->next = NULL;
 	temp->next = head;
 	return shead;
-	
+
+}
+
+node* midpoint(node*head){
+	if(head==NULL or head->next==NULL){
+		return head;
+	}
+	node*slow = head;
+	node*fast = head->next;
+
+	while(fast!=NULL or fast->next!=NULL){
+		fast = fast->next;
+		slow = slow->next;
+	}
+	return slow;
 }
 
 int main(){
@@ -199,8 +209,10 @@ int main(){
 	node*head;
 	cin >> head;
 	cout << head;
-	reverse(head);
-	cout << head;
+	//head = recReverse(head);
+	
+	node* mid = midpoint(head);
+	cout << mid->data<<endl;
 
 	//print(head);
 

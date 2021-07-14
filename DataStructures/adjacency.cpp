@@ -17,8 +17,15 @@ int main(){
 		l[y].push_back(make_pair(x,wt));
 	}
 
-	
-
+	//print
+	for(int i=0; i<n; i++){
+		//Print every list
+		cout << "Linked LISt" << i << "->";
+		for(auto xp:l[i]){
+			cout << "(" << xp.first<<"," << xp.second<<"),";
+		}
+		cout << endl;
+	}
 
 
 	return 0;

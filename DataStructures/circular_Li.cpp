@@ -60,10 +60,16 @@ void deleteNode(node*head, int data){
 	if(del==NULL){
 		return;
 	}
+
+	if(head==del){
+		head= head->next;
+	}
 	node*temp = head;
 	while(temp->next!=del){
 		temp = temp->next;
 	}
+	temp->next = del->next;
+	delete del; 
 }
  
 int main(){

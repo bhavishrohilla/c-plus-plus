@@ -2,11 +2,12 @@
 #include<vector>
 using namespace std;
 
+template<typename T>
 class Stack{
 private:
-	vector<int> v;
+	vector<T> v;
 public:
-	void push(int data){
+	void push(T data){
 		v.push_back(data);
 	}
 	bool empty(){
@@ -18,7 +19,7 @@ public:
 		}
 	}
 
-	int top(){
+	T top(){
 		return v[v.size()-1];
 	}
 };
@@ -26,19 +27,15 @@ public:
 int main(){
 
 	//Implementation using vector
-	Stack s;
-	for(int i=0; i<=5;){
-		s.push(i*i);
+	Stack<char> s;
+	for(int i=65; i<=70;i++){
+		s.push(i);
 	}
 	//print the content of the stack by popping each element
 	while(!s.empty()){
 		cout << s.top()<<endl;
 		s.pop();
 	}
-
-
-
-
 
 	return 0;
 }

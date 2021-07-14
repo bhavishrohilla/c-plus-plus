@@ -30,6 +30,7 @@ void insert(node*head, int data){
 }
 void print(node*head){
 	node*temp = head;
+	//for all nodes except last one
 	while(temp->next!=head){
 		cout << temp->data<<" ";
 		temp = temp->next;
@@ -53,6 +54,13 @@ node*getnode(node*&head, int data){
 		return temp;
 	}
 	return NULL;
+}
+void deleteNode(node*head, int data){
+	node* del = getnode(head, data);
+	if(del==NULL){
+		return;
+	}
+	
 }
  
 int main(){

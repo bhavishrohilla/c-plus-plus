@@ -2,12 +2,12 @@
 #include<vector>
 using namespace std;
 
-class stack{
+class Stack{
 private:
 	vector<int> v;
 public:
 	void push(int data){
-		v.push(data);
+		v.push_back(data);
 	}
 	bool empty(){
 		return v.size()==0;
@@ -31,9 +31,11 @@ int main(){
 		s.push(i*i);
 	}
 	//print the content of the stack by popping each element
-	while(!empty()){
+	while(!s.empty()){
 		cout << s.top()<<endl;
+		s.pop();
 	}
+
 
 
 

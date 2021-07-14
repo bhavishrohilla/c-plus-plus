@@ -16,4 +16,16 @@ int main(){
 	for(auto s:l2){
 		cout << s << "->";
 	}
+
+	l2.sort();
+
+	//reverse
+	l2.reverse();
+
+	//pop front
+	l2.pop_front();
+
+	l2.push_front("kiwi");
+	l2.pop_back();
+
 }

@@ -4,7 +4,16 @@ using namespace std;
 
 void insertAtBottom(stack<int> &s, int x){
 	//base case
-	
+	if(s.empty()){
+		s.push(x);
+		return;
+	}
+
+	//rec case
+	int data = s.top();
+	s.pop();
+	insertAtBottom(s,x);
+	s.push(data);
 }
 
 void reverseStrack(stack<int> &s){

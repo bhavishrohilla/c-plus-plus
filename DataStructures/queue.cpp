@@ -12,6 +12,17 @@ public:
 		f =0;
 		r = ms-1;
 	}
+	bool full(){
+		return cs == ms;
+	}
+
+	void push(int data){
+		if(!full()){
+			r = (r+1)%ms;
+			arr[r] = data;
+			cs++;
+		}
+	}
 	~Queue(){
 
 	}

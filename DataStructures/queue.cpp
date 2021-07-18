@@ -12,6 +12,7 @@ public:
 		f =0;
 		r = ms-1;
 	}
+	
 	bool full(){
 		return cs == ms;
 	}

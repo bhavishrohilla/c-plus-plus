@@ -12,7 +12,7 @@ public:
 		f =0;
 		r = ms-1;
 	}
-	
+
 	bool full(){
 		return cs == ms;
 	}
@@ -24,6 +24,18 @@ public:
 			cs++;
 		}
 	}
+
+	bool empty(){
+		return cs==0;
+	}
+
+	void pop(){
+		if(!empty()){
+			f = (f+1)%ms;
+			cs--;
+		}
+	}
+
 	~Queue(){
 
 	}

@@ -35,14 +35,33 @@ public:
 			cs--;
 		}
 	}
+	int front(){
+		return arr[f];
+	}
 
 	~Queue(){
-
+		if(arr!=NULL){
+			delete [] arr;
+			arr = NULL;
+		}
 	}
 };
 
-int main()
-{
+int main(){
+	
+	Queue q;
+	for(int i=0;i<=6; i++){
+		q.push(i);
+	}
+
+	q.pop();
+	q.pop();
+	q.push(7);
+
+	while(!q.empty()){
+		cout << q.front()<<" ";
+		q.pop();
+	}
 	
 	return 0;
 }

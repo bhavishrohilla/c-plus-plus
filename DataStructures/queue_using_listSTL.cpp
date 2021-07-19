@@ -28,3 +28,21 @@ public:
 		return l.front();
 	}
 };
+
+
+int main(){
+
+	Queue q;
+	for(int i=1; i<=10; i++){
+		q.push(i);
+	}
+	while(!q.isEmpty()){
+		cout << q.front << " ";
+		q.pop();
+	}
+
+	return 0;
+}
+
+
+

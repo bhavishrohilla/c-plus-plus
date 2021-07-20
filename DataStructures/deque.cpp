@@ -13,11 +13,35 @@ int main(){
 	}
 	cin >> k;
 	deque<int> Q(k);
-	for(int i=0; i<k; i++){
+	int i;
+	for(i=0; i<k; i++){
 		while(!Q.empty() && a[i]>a[Q.back()]){
 			Q.pop_back();
 		}
 		Q.push_back(i);
 	}
+	//Process the remaining
+	for(;i<n;i++){
+		cout << a[Q.front()]<<" ";
+
+		//1. Remove the elements which are not the part of the of the window
+		while(!Q.empty() and (Q.front()<=i-k)){
+			Q.pop_front();
+		}
+
+		//2. Remove the elements which are not useful
+		while(!Q.empty() and (a[i]>=a[Q.back()])){
+			Q.pop_back(); 
+		}
+
+
+
+		//3. Add the new elemets
+		Q.push_back(i);
+
+	}
+	cout << a[Q.front()]<<endl;
+
+
 	return 0;
 }

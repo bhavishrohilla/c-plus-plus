@@ -1,4 +1,5 @@
 #include<iostream>
+#include<cstring>
 using namespace std;
 
 int main(){
@@ -21,8 +22,18 @@ int main(){
 		else{
 			current_len = i= last_occ;
 		}
+		if(current_len>max_len){
+			max_len = current_len;
+		}
+		visited[a[i]] = i;
 	}
 
 
 	return 0;
 }
+
+
+
+/*
+/#/s/11083
+*/

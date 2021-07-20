@@ -17,12 +17,16 @@ int main(){
 		while(!q.empty()){
 			int idx = q.front()-'a';
 			if(freq[idx]>1){
-				q.pop()
+				q.pop();
 			}
 			else{
 				cout << q.front()<<endl;
 				break;
 			}
+		}
+
+		if(q.empty()){
+			cout << "-1" <<endl;
 		}
 
 		cin>>ch;

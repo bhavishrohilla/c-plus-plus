@@ -24,8 +24,9 @@ public:
 
 		//swap the names of q1 q2
 		swap(q1,q2);
+		return;
 	}
-	int top(){
+	T top(){
 		while(q1.size()>1){
 			T element  = q1.front();
 			q2.push(element);
@@ -38,6 +39,7 @@ public:
 		q2.push(element);
 
 		swap(q1,q2);
+
 	}
 	int size(){
 		return q1.size() + q2.size();
